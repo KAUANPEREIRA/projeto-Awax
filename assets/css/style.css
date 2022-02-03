@@ -121,3 +121,28 @@ body{
     margin-top:30px;
     text-transform:uppercase;
 }
+
+.banner .slide-pointes{
+    width:100vw;/* este sem vw permite que minha propiedade pegue a area inteira*/
+    height:20px;
+   
+    position: absolute;/*permite minha propiedade aparecer independente da area */
+    /* as vezes usar o position para algo aparecer*/
+    margin-top:-50px;
+    display:flex;
+    align-items:center; /*processo de alinhamento*/
+    justify-content:center; /*processo de alinhamento com flex*/
+}
+
+.banner .pontos{
+    width: 15px;
+    height: 15px;
+    border: solid 2px #b28756;
+    border-radius:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.active{
+    background-color: #b28756;
+}
