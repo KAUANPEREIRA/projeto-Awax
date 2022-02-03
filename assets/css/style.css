@@ -10,7 +10,7 @@ header{
 }
 
 .header{
-    max-width: 1140px;
+    max-width: 1140px; /*largura maxima para monitores e padrao para desenvolvimento*/
     margin: auto;
     height: 100px;
     display: flex;  
@@ -19,6 +19,7 @@ header{
 body{
     font-family:'Montserrat',Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden; /* anula a barre de rolagem de baixo */
 }
 .logo{
     width:100px;
@@ -145,4 +146,39 @@ body{
 }
 .active{
     background-color: #b28756;
+}
+
+.default{
+background-color: red;
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+
+
+
+
+.default .section-desc ,
+.default .section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+.default .section-title{
+    font-size:20px;
+    
+
+}
+
+.default .section-desc{
+    font-size:13px;
+
+}
+
+.default .section-body{
+    max-width: 1140px;/*largura padrao para projetos profissionais*/
+    margin:auto;/*centraliza o conteudo*/
+    background-color: #333;
+
 }
