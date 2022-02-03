@@ -61,3 +61,63 @@ body{
     border-bottom:3px solid #b28756;
 }
 
+.banner{
+    background-color:#333;
+    height:calc(100vh - 100px);/*para que meu banner ocupe a tela inteira*/
+    background-image:url('../imagens/bg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    overflow:hidden;
+}
+
+.banner .sliders{
+    width:1000vw;
+    height:100%;
+
+}
+
+.banner .slide{
+    width:100vw;/*100vw tamanho de uma tela*/
+    height:100%;
+    display:inline-block;
+    background-color:rgba(0,0,0,0.7);/*uma opacidade sobre a imagem*/
+}
+
+.banner .slidearea{
+    height:100%;
+    display:flex;
+    flex-direction:column;/* permite que um item fique abaixo do outro utilizando display flex*/
+    align-items:center;
+    color:#fff;
+    justify-content:center;
+    
+}
+
+.banner h1{
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:50px;
+
+}
+
+.banner h1 span{
+    color:#b28756;
+    
+}
+.banner h2{
+    text-transform:uppercase;
+}
+
+.banner a{
+    color:white;
+    border-radius:50px;
+    display:block;
+    background-color:#b28756;
+    font-size:13px;
+    text-decoration:none;
+    padding:10px 30px;
+    font-weight:600;
+    margin-top:30px;
+    text-transform:uppercase;
+}
