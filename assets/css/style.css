@@ -182,7 +182,7 @@ padding-bottom: 50px;
 .default .section-body{
     max-width: 1140px;/*largura padrao para projetos profissionais*/ /*larguramaxima*/
     margin:auto;/*centraliza o conteudo*/
-    background-color: #333;
+    
 
 }
 
@@ -216,3 +216,16 @@ padding-bottom: 50px;
 
 /*CSS DE AREAS ESPECIFICAS*/
 /*Coisas ao lado um do outro com display flex*/
+
+.section-aboutus{
+    display:flex;/*tornar flexivel deixar um ao lado do outro*/
+}
+
+.section-aboutus-left{
+    flex:1;/*ocupár um bom espaço*/
+}
+
+.section-aboutus-rigth{
+    width:500px;
+    background-color:red;
+}
