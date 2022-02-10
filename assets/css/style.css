@@ -283,4 +283,22 @@ box-shadow: 0px 5px 10px; /*efeito de sombreamento*/
     color: #999;
 }
 
+.section-projects{
+
+}
+
+.section-projects-filter{
+    border:1px solid #333;
+    background-color:#999;
+    border-radius: 30px;
+
+}
+
+.section-projects-filter ul,
+.section-projects-filter li{
+    list-style: none;
+}
+
+
+
 
