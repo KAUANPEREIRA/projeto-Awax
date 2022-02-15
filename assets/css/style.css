@@ -284,19 +284,98 @@ box-shadow: 0px 5px 10px; /*efeito de sombreamento*/
 }
 
 .section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
 .section-projects-filter{
-    border:1px solid #333;
-    background-color:#999;
+    border:1px solid #999;
+    background-color:#eee;
     border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
 
 }
 
 .section-projects-filter ul,
 .section-projects-filter li{
     list-style: none;
+}
+
+.section-projects-filter li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #999;
+    border-bottom: 3px solid #eee;
+    cursor:pointer;
+}
+
+.section-projects-filter li:hover{
+    border-bottom: 3px solid #b28756;
+
+}
+
+.section-projects-filter li:first-child{
+    border-left: 0px;
+}
+.section-projects-photos {/*estrutura montada de forma responsiva */
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.section-projects-photo{
+    width: 280px;
+}
+
+.section-projects-photoArea{
+    margin: 10px;
+    width:260px;
+    height: 160px;
+}
+
+.section-projects-photoArea img{
+    width:inherit;/*propriedade para herdar do item anterior*/
+    height: inherit;
+}
+
+.photoInfo{
+    position:absolute;/*forçar que fique acima*/
+    background-color: rgba(0,0,0,0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
+.section-projects-photoArea:hover .photoInfo{
+    display: flex;
+
+}
+
+.bgTeam{
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+}
+
+.section-TeamArea{
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
